@@ -3,7 +3,7 @@ import axios from "axios";
 import { Resume } from "../types";
 
 export const fetchResume = createAsyncThunk("resume/fetchResume", async () => {
-  const response = await axios.get("http://localhost:4000/api/resume");
+  const response = await axios.get("https://portfolio2025-backend-seven.vercel.app/api/resume");
   return response.data as Resume;
 });
 
